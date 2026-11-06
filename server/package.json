@@ -1,0 +1,16 @@
+{
+  "name": "seedsure-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "SeedSure API: zero-dependency Node.js server using built-in SQLite, crypto and http.",
+  "engines": { "node": ">=22.5.0" },
+  "scripts": {
+    "dev": "node --watch --disable-warning=ExperimentalWarning src/index.js",
+    "start": "node --disable-warning=ExperimentalWarning src/index.js",
+    "seed": "node --disable-warning=ExperimentalWarning src/scripts/seed-cli.js",
+    "create-admin": "node --disable-warning=ExperimentalWarning src/scripts/create-admin.js",
+    "backup": "node --disable-warning=ExperimentalWarning src/scripts/backup.js",
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.js"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "seedsure",
+  "private": true,
+  "version": "2.0.0",
+  "description": "SeedSure: QR seed-batch lookup with camera scanning and an admin panel.",
+  "engines": { "node": ">=22.5.0" },
+  "scripts": {
+    "setup": "npm --prefix client install && node scripts/setup-env.mjs",
+    "dev": "node scripts/dev.mjs",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server start",
+    "test": "npm --prefix server test",
+    "create-admin": "npm --prefix server run create-admin",
+    "backup": "npm --prefix server run backup"
+  }
+}
